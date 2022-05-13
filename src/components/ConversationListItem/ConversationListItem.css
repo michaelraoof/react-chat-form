@@ -1,0 +1,49 @@
+.conversation-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.conversation-list-item:hover {
+  background: #eeeef1;
+  cursor: pointer;
+}
+
+.conversation-photo {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.conversation-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.conversation-snippet {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  width: 7vw;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .conversation-photo {
+    width: 30px;
+    height: 30px;
+  }
+  .conversation-title {
+    font-size: 9px;
+  }
+  .conversation-snippet {
+    width: 80px;
+    font-size: 9px;
+  }
+}

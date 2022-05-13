@@ -1,0 +1,22 @@
+.content {
+  background: url("men-2425121_1920.jpg");
+  min-height: 100vh;
+  max-height: 100vh;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.headers {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+}
+.btn {
+  margin-right: 20px;
+}
+.jmp {
+  background-color: transparent !important;
+  color: white;
+}
