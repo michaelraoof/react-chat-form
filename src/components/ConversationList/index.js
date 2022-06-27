@@ -15,7 +15,7 @@ export default function ConversationList(props) {
   }, []);
   const [searchTerm, setSearchTerm] = useState("");
   const getConversations = () => {
-    axios.get("https://randomuser.me/api/?results=1").then((response) => {
+    axios.get("https://randomuser.me/api/?results=30").then((response) => {
       let newConversations = response.data.results.map((result) => {
         return {
           photo: result.picture.large,
